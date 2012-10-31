@@ -2,13 +2,13 @@
 /*
 Plugin Name: Leaguevine Linking
 Description: Plugin replaces names with leaguevine url in content.
-Author: RH
+Author: Leaguevine Inc., Hivista
 Version: 1.0
 */
+include 'local_settings.php';
 
 define("LLINKING_PLUGIN_DIR", dirname(__FILE__));
 define("LLINKING_PLUGIN_URL", get_option('siteurl').'/wp-content/plugins/leaguevine-linking/');
-define("LEAGUEVINE_API_URL", "https://api.leaguevine.com/v1/players/");
 
 // adding linking button to media buttons
 add_action('media_buttons_context', 'llinking_media_buttons');
